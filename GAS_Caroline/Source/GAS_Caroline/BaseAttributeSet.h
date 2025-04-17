@@ -46,5 +46,5 @@ public:
 	FGameplayAttributeData MaxStrength;
 	ATTRIBUTE_ACCESSORS(UBaseAttributeSet, MaxStrength);
 
-
+	void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
 };
