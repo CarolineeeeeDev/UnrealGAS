@@ -34,6 +34,12 @@ public:
 	UPROPERTY(BlueprintAssignable, Category = "Ability")
 	FOnHealthChangeEvent HPChangeEvent;
 
+	UPROPERTY(BlueprintAssignable, Category = "Ability")
+	FOnHealthChangeEvent MPChangeEvent;
+
+	UPROPERTY(BlueprintAssignable, Category = "Ability")
+	FOnHealthChangeEvent StrengthChangeEvent;
+
 	void OnHealthAttributeChanged(const FOnAttributeChangeData& Data);
 
 	UFUNCTION(BlueprintCallable, Category = "BaseCharacter")
